@@ -119,7 +119,7 @@ def main():
                         "resourceType": "ServiceRequest"
                     },
                     "resourceId": "{{jsonPath request.body '$.context.draftOrders.entry[0].resource.id'}}",
-                    "type": "create"
+                    "type": "update"
                 }
             ]
         }
