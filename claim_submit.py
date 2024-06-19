@@ -132,6 +132,15 @@ def main():
                         "outcome": "queued",
                         "item": [
                             {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.org/fhir/us/davinci-pas/StructureDefinition/extension-itemTraceNumber",
+                                        "valueIdentifier": {
+                                            "system": "http://payer.tracenumber.system",
+                                            "value": "9876543210"
+                                        }
+                                    }
+                                ],
                                 "itemSequence": 1,
                                 "adjudication": [
                                     {
@@ -213,21 +222,12 @@ def main():
                                 "valuePositiveInt" : 1
                                 },
                                 {
-                                "url" : "http://hl7.org/fhir/us/davinci-pas/StructureDefinition/extension-communicatedDiagnosis",
-                                "valueCodeableConcept" : {
-                                    "coding" : [{
-                                    "system" : "http://hl7.org/fhir/sid/icd-10-cm",
-                                    "code" : "G89.4"
-                                    }]
-                                }
-                                },
-                                {
                                 "url" : "http://hl7.org/fhir/us/davinci-pas/StructureDefinition/extension-contentModifier",
                                 "valueCodeableConcept" : {
                                     "coding" : [{
                                     "system" : "http://loinc.org",
-                                    "code" : "18804-5",
-                                    "display": "Justification for Admissions"
+                                    "code" : "102089-0",
+                                    "display": "DTR Context Questionnaire"
                                     }]
                                 }
                                 }],
