@@ -74,6 +74,11 @@ def main():
                 "code": "166001",
                 "display": "Behavioral therapy",
                 "system": "http://snomed.info/sct"
+            },
+            {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "81162",
+                "display": "81162 - BRCA1 (BRCA1, DNA repair associated), BRCA2 (BRCA2, DNA repair associated) (eg, hereditary breast and ovarian cancer) gene analysis; full sequence analysis and full duplication/deletion analysis (ie, detection of large gene rearrangements)"
             }]
     
     for code in codes:
@@ -266,6 +271,53 @@ def main():
                         {
                             "url": "questionnaire",
                             "valueCanonical": "https://fhir-dev.mettles.com/baseServer/fhir/Questionnaire/questionnaire-lcd1-eyelidsurgery"
+                        }
+                    ],
+                    "url": "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/ext-coverage-information"
+                }
+            ]
+
+        if code["code"] == "81162":
+            response_body["systemActions"][0]["resource"]["extension"] = [
+                {
+                    "extension": [
+                        {
+                            "url": "coverage",
+                            "valueReference": {
+                                "reference": "{{jsonPath request.body '$.context.draftOrders.entry[0].resource.insurance[0].reference'}}"
+                            }
+                        },
+                        {
+                            "url": "date",
+                            "valueDate": "2024-05-14"
+                        },
+                        {
+                            "url": "identifier",
+                            "valueString": "263adc54-ecf6-41b4-8ac8-055d0068c3fd"
+                        },
+                        {
+                            "url": "pa-needed",
+                            "valueCode": "auth-needed"
+                        },
+                         {
+                                "url": "coverage-assertion-id",
+                                "valueString": "5585be3d-30d5-4e4e-9dd8-f47c5d2e810d"
+                            },
+                            {
+                                "url": "billingCode",
+                                "valueCoding": {
+                                    "system": "http://www.ama-assn.org/go/cpt",
+                                    "code": "81162",
+                                    "display": "81162 - BRCA1 (BRCA1, DNA repair associated), BRCA2 (BRCA2, DNA repair associated) (eg, hereditary breast and ovarian cancer) gene analysis; full sequence analysis and full duplication/deletion analysis (ie, detection of large gene rearrangements)"
+                                }
+                            },
+                        {
+                            "url": "covered",
+                            "valueCode": "conditional"
+                        },
+                        {
+                            "url": "doc-needed",
+                            "valueCode": "clinical"
                         }
                     ],
                     "url": "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/ext-coverage-information"
