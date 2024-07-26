@@ -129,10 +129,6 @@ def main():
         "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
     },
     "item": [
-        {
-            "linkId": "1",
-            "text": "Type of Surgery",
-            "item": [
     {
       "linkId": "1",
       "text": "Type of Surgery",
@@ -170,7 +166,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": False
+              "valueBoolean": false
             }
           ],
           "linkId": "VisionInterference",
@@ -179,7 +175,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": True
+              "valueBoolean": true
             }
           ],
           "linkId": "DifficultyFittingSpectacles",
@@ -188,7 +184,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": False
+              "valueBoolean": false
             }
           ],
           "linkId": "EyelidIrritation",
@@ -197,7 +193,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": True
+              "valueBoolean": true
             }
           ],
           "linkId": "Socket",
@@ -206,7 +202,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": False
+              "valueBoolean": false
             }
           ],
           "linkId": "DifficultyFittingProsthesis",
@@ -221,7 +217,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": True
+              "valueBoolean": true
             }
           ],
           "linkId": "CheckDermatochalasis",
@@ -230,7 +226,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": True
+              "valueBoolean": true
             }
           ],
           "linkId": "DifficultySpectaclesDermatochalasis",
@@ -239,7 +235,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": False
+              "valueBoolean": false
             }
           ],
           "linkId": "ThyroidEyeCondition",
@@ -248,7 +244,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": True
+              "valueBoolean": true
             }
           ],
           "linkId": "CheckBlepharochalasis",
@@ -257,7 +253,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": True
+              "valueBoolean": true
             }
           ],
           "linkId": "ChronicDermatitisOrEyeIrritation",
@@ -266,7 +262,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": False
+              "valueBoolean": false
             }
           ],
           "linkId": "IdiopathicBlepharospasm",
@@ -275,7 +271,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": False
+              "valueBoolean": false
             }
           ],
           "linkId": "AnophthalmicSocket",
@@ -284,7 +280,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": False
+              "valueBoolean": false
             }
           ],
           "linkId": "BrowPtosis",
@@ -293,7 +289,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": False
+              "valueBoolean": false
             }
           ],
           "linkId": "CheckBlepharoptosis",
@@ -338,7 +334,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": True
+              "valueBoolean": true
             }
           ],
           "linkId": "RedundantTissueObscureSight",
@@ -347,7 +343,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": False
+              "valueBoolean": false
             }
           ],
           "linkId": "EdemaRedundantTissue",
@@ -356,7 +352,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": True
+              "valueBoolean": true
             }
           ],
           "linkId": "AngleEyelidLifting",
@@ -371,7 +367,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": False
+              "valueBoolean": false
             }
           ],
           "linkId": "ThyroidOrbitopathy",
@@ -380,550 +376,6 @@ def main():
       ]
     }
   ]
-            },
-        {
-            "linkId": "2",
-            "text": "Functional Indications",
-            "item": [
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "VisionInterference",
-                    "text": "Is there an interference in the vision/visual field due to this condition?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": True
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "DifficultyFittingSpectacles",
-                    "text": "Does the patient have difficulty fitting spectacles due to this condition?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": True
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "EyelidIrritation",
-                    "text": "Does the patient have severe eyelid irritation due to this condition?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": False
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "Socket",
-                    "text": "Does the patient have Anophthalmic, Microphthalmic or Enophthalmic socket?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": True
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "linkId": "3",
-            "text": "Diagnosis Information",
-            "item": [
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "CheckDermatochalasis",
-                    "text": "Does the patient have Dermatochalasis?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": True
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "ThyroidEyeCondition",
-                    "text": "Does the patient have Thyroid Eye disease/Eye infection/Eye allergy?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": False
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "CheckBlepharochalasis",
-                    "text": "Does the patient have blepharochalasis (eye lid edema)?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": True
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "IdiopathicBlepharospasm",
-                    "text": "Does the patient have primary idiopathic blepharospasm?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": False
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "AnophthalmicSocket",
-                    "text": "Does the patient have an anophthalmic socket?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": False
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "BrowPtosis",
-                    "text": "Does the patient have brow ptosis?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": False
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "CheckBlepharoptosis",
-                    "text": "Does the patient have blepharoptosis?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": False
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "linkId": "4",
-            "text": "Laterality",
-            "item": [
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "Laterality",
-                    "text": "What is the laterality of the condition?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "manual"
-                                        },
-                                        {
-                                            "url": "author",
-                                            "valueReference": {
-                                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueCoding": {
-                                "code": "Unilateral",
-                                "display": "Unilateral"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "AnatomicalLocationCondition",
-                    "text": "Is the affected eye:",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "manual"
-                                        },
-                                        {
-                                            "url": "author",
-                                            "valueReference": {
-                                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueCoding": {
-                                "code": "Right",
-                                "display": "Right"
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "linkId": "5",
-            "text": "Physical Signs",
-            "item": [
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "RedundantTissueObscureSight",
-                    "text": "Does the redundant tissue obscure the line of sight?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": True
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "EdemaRedundantTissue",
-                    "text": "Is there any erythema/edema of the redundant tissue?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": False
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "AngleEyelidLifting",
-                    "text": "Is the angle between the resting field and the field performed by manually lifting the eyelid more than 12 degrees?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": True
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "linkId": "6",
-            "text": "Contraindications",
-            "item": [
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "ThyroidOrbitopathy",
-                    "text": "Does the patient have thyroid orbitopathy?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "auto"
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueBoolean": False
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "linkId": "7",
-            "text": "Photographic Evidence",
-            "item": [
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "EvidencePhysicalSignsUpload",
-                    "text": "Evidence Physical Signs Upload"
-                }
-            ]
-        }
-    ]
 }
         create_stub(response_body)
 
