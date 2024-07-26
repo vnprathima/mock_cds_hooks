@@ -133,82 +133,254 @@ def main():
             "linkId": "1",
             "text": "Type of Surgery",
             "item": [
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "SurgeryPurpose",
-                    "text": "What is the purpose of this surgery?",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "manual"
-                                        },
-                                        {
-                                            "url": "author",
-                                            "valueReference": {
-                                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueCoding": {
-                                "code": "Cosmetic",
-                                "display": "Cosmetic"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-author",
-                            "valueReference": {
-                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                            }
-                        }
-                    ],
-                    "linkId": "AnatomicalLocationOfSurgery",
-                    "text": "Is the surgery needed for:",
-                    "answer": [
-                        {
-                            "extension": [
-                                {
-                                    "url": "http://hl7.org/fhir/us/davinci-dtr/StructureDefinition/information-origin",
-                                    "extension": [
-                                        {
-                                            "url": "source",
-                                            "valueCode": "manual"
-                                        },
-                                        {
-                                            "url": "author",
-                                            "valueReference": {
-                                                "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-                                            }
-                                        }
-                                    ]
-                                }
-                            ],
-                            "valueCoding": {
-                                "code": "Upper Eye Lid",
-                                "display": "Upper Eye Lid"
-                            }
-                        }
-                    ]
-                }
-            ]
+    {
+      "linkId": "1",
+      "text": "Type of Surgery",
+      "item": [
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "Cosmetic",
+                "display": "Cosmetic"
+              }
+            }
+          ],
+          "linkId": "SurgeryPurpose",
+          "text": "What is the purpose of this surgery?"
         },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "Upper Eye Lid",
+                "display": "Upper Eye Lid"
+              }
+            }
+          ],
+          "linkId": "AnatomicalLocationOfSurgery",
+          "text": "Is the surgery needed for:"
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "text": "Functional Indications",
+      "item": [
+        {
+          "answer": [
+            {
+              "valueBoolean": False
+            }
+          ],
+          "linkId": "VisionInterference",
+          "text": "Is there an interference in the vision/visual field due to this condition?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": True
+            }
+          ],
+          "linkId": "DifficultyFittingSpectacles",
+          "text": "Does the patient have difficulty fitting spectacles due to this condition?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": False
+            }
+          ],
+          "linkId": "EyelidIrritation",
+          "text": "Does the patient have severe eyelid irritation due to this condition?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": True
+            }
+          ],
+          "linkId": "Socket",
+          "text": "Does the patient have Anophthalmic, Microphthalmic or Enophthalmic socket?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": False
+            }
+          ],
+          "linkId": "DifficultyFittingProsthesis",
+          "text": "Does the patient have any difficulty wearing or fitting a prosthesis due to this condition?"
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "text": "Diagnosis Information",
+      "item": [
+        {
+          "answer": [
+            {
+              "valueBoolean": True
+            }
+          ],
+          "linkId": "CheckDermatochalasis",
+          "text": "Does the patient have Dermatochalasis?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": True
+            }
+          ],
+          "linkId": "DifficultySpectaclesDermatochalasis",
+          "text": "Does it cause significant difficulty in fitting of spectacles?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": False
+            }
+          ],
+          "linkId": "ThyroidEyeCondition",
+          "text": "Does the patient have Thyroid Eye disease/Eye infection/Eye allergy?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": True
+            }
+          ],
+          "linkId": "CheckBlepharochalasis",
+          "text": "Does the patient have blepharochalasis (eye lid edema)?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": True
+            }
+          ],
+          "linkId": "ChronicDermatitisOrEyeIrritation",
+          "text": "Does it cause chronic dermatitis/eye irritation?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": False
+            }
+          ],
+          "linkId": "IdiopathicBlepharospasm",
+          "text": "Does the patient have primary idiopathic blepharospasm?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": False
+            }
+          ],
+          "linkId": "AnophthalmicSocket",
+          "text": "Does the patient have an anophthalmic socket?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": False
+            }
+          ],
+          "linkId": "BrowPtosis",
+          "text": "Does the patient have brow ptosis?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": False
+            }
+          ],
+          "linkId": "CheckBlepharoptosis",
+          "text": "Does the patient have blepharoptosis?"
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "text": "Laterality",
+      "item": [
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "Unilateral",
+                "display": "Unilateral"
+              }
+            }
+          ],
+          "linkId": "Laterality",
+          "text": "What is the laterality of the condition?"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "Right",
+                "display": "Right"
+              }
+            }
+          ],
+          "linkId": "AnatomicalLocationCondition",
+          "text": "Is the affected eye:"
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "text": "Physical Signs",
+      "item": [
+        {
+          "answer": [
+            {
+              "valueBoolean": True
+            }
+          ],
+          "linkId": "RedundantTissueObscureSight",
+          "text": "Does the redundant tissue obscure the line of sight?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": False
+            }
+          ],
+          "linkId": "EdemaRedundantTissue",
+          "text": "Is there any erythema/edema of the redundant tissue?"
+        },
+        {
+          "answer": [
+            {
+              "valueBoolean": True
+            }
+          ],
+          "linkId": "AngleEyelidLifting",
+          "text": "Is the angle between the resting field and the field performed by manually lifting the eyelid more than 12 degrees?"
+        }
+      ]
+    },
+    {
+      "linkId": "6",
+      "text": "Contraindications",
+      "item": [
+        {
+          "answer": [
+            {
+              "valueBoolean": False
+            }
+          ],
+          "linkId": "ThyroidOrbitopathy",
+          "text": "Does the patient have thyroid orbitopathy?"
+        }
+      ]
+    }
+  ]
+            },
         {
             "linkId": "2",
             "text": "Functional Indications",
