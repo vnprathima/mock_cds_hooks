@@ -122,12 +122,9 @@ def main():
     "questionnaire": "https://emr.nucural.com/fhir/Questionnaire/b92732a6-4a65-11ef-ba8d-06cdd353a087",
     "status": "in-progress",
     "subject": {
-        "reference": "Patient/b3496955-d264-11ee-92ab-06cdd353a087",
+        "reference": "Patient/fdb3d0b8-d26b-11ee-92ac-06cdd353a087",
     },
-    "authored": "2024-07-25",
-    "author": {
-        "reference": "Practitioner/d3edddb0-dfd5-11ee-8888-06cdd353a087"
-    },
+    "authored": "2024-07-26",
     "item": [
     {
       "linkId": "1",
