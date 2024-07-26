@@ -166,7 +166,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": false
+              "valueBoolean": False
             }
           ],
           "linkId": "VisionInterference",
@@ -175,7 +175,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": true
+              "valueBoolean": True
             }
           ],
           "linkId": "DifficultyFittingSpectacles",
@@ -184,7 +184,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": false
+              "valueBoolean": False
             }
           ],
           "linkId": "EyelidIrritation",
@@ -193,7 +193,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": true
+              "valueBoolean": True
             }
           ],
           "linkId": "Socket",
@@ -202,7 +202,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": false
+              "valueBoolean": False
             }
           ],
           "linkId": "DifficultyFittingProsthesis",
@@ -217,7 +217,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": true
+              "valueBoolean": True
             }
           ],
           "linkId": "CheckDermatochalasis",
@@ -226,7 +226,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": true
+              "valueBoolean": True
             }
           ],
           "linkId": "DifficultySpectaclesDermatochalasis",
@@ -235,7 +235,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": false
+              "valueBoolean": False
             }
           ],
           "linkId": "ThyroidEyeCondition",
@@ -244,7 +244,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": true
+              "valueBoolean": True
             }
           ],
           "linkId": "CheckBlepharochalasis",
@@ -253,7 +253,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": true
+              "valueBoolean": True
             }
           ],
           "linkId": "ChronicDermatitisOrEyeIrritation",
@@ -262,7 +262,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": false
+              "valueBoolean": False
             }
           ],
           "linkId": "IdiopathicBlepharospasm",
@@ -271,7 +271,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": false
+              "valueBoolean": False
             }
           ],
           "linkId": "AnophthalmicSocket",
@@ -280,7 +280,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": false
+              "valueBoolean": False
             }
           ],
           "linkId": "BrowPtosis",
@@ -289,7 +289,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": false
+              "valueBoolean": False
             }
           ],
           "linkId": "CheckBlepharoptosis",
@@ -334,7 +334,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": true
+              "valueBoolean": True
             }
           ],
           "linkId": "RedundantTissueObscureSight",
@@ -343,7 +343,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": false
+              "valueBoolean": False
             }
           ],
           "linkId": "EdemaRedundantTissue",
@@ -352,7 +352,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": true
+              "valueBoolean": True
             }
           ],
           "linkId": "AngleEyelidLifting",
@@ -367,7 +367,7 @@ def main():
         {
           "answer": [
             {
-              "valueBoolean": false
+              "valueBoolean": False
             }
           ],
           "linkId": "ThyroidOrbitopathy",
