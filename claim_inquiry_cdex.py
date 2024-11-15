@@ -1,7 +1,7 @@
 import requests
 
 def create_stub(response_body):
-    wiremock_base_url = "http://localhost:8081"
+    wiremock_base_url = "http://localhost:8082"
     
     mapping = {
         "request": {
