@@ -118,6 +118,16 @@ def create_stub():
                     "id": "mettles-encounter-discharge",
                     "title": "Mettles Encounter Discharge",
                     "usageRequirements": "Note: functionality of this CDS Service is degraded without access to a FHIR Restful API as part of CDS recommendation generation."
+                },
+                {
+                    "description": "CDS Service for Appointment Book",
+                    "prefetch": {
+                        "appointmentBundle": "Appointment?_id={{context.appointments.id}}&_include=*",
+                    },
+                    "hook": "appointment-book",
+                    "id": "mettles-appointment-book",
+                    "title": "Mettles Appointment Book",
+                    "usageRequirements": "Note: functionality of this CDS Service is degraded without access to a FHIR Restful API as part of CDS recommendation generation."
                 }
             ]
             },
