@@ -122,7 +122,9 @@ def create_stub():
                 {
                     "description": "CDS Service for Appointment Book",
                     "prefetch": {
-                        "appointmentBundle": "Appointment?_id={{context.appointments.id}}&_include=*",
+                        "serviceRequestBundle": "ServiceRequest?_id={{context.appointments.Appointment.basedOn}}&_include=ServiceRequest:patient&_include=ServiceRequest:performer&_include=ServiceRequest:requester&_include=PractitionerRole:organization&_include=PractitionerRole:practitioner",
+                        "appointmentBundle": "Appointment?_id={{context.appointments.Appointment.id}}&_include=Appointment:based-on&_include=Appointment:patient&_include=Appointment:practitioner&_include=Appointment:practitioner:PractitionerRole&_include:iterate=PractitionerRole:organization&_include:iterate=PractitionerRole:practitioner&_include=Appointment:location",
+                        "coverageBundle": "Coverage?patient={{context.patientId}}"
                     },
                     "hook": "appointment-book",
                     "id": "mettles-appointment-book",
