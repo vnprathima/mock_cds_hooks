@@ -346,23 +346,34 @@ def main():
                     "repeats": True,
                     "answerOption": [
                       {
-                        "valueString": "Biologics(e.g.,platelet rich plasma, stem cells, amniotic fluid)"
-                        
+                        "valueCoding": {
+                          "code": "Biologics(e.g.,platelet rich plasma, stem cells, amniotic fluid)",
+                          "display": "Biologics(e.g.,platelet rich plasma, stem cells, amniotic fluid)"
+                        }
                       },
                       {
-                        "valueString": "Other Injectate(s)"
-                        
+                        "valueCoding": {
+                          "code": "Other Injectate(s)",
+                          "display": "Other Injectate(s)"
+                        }
                       },
                       {
-                        "valueString": "Anaesthetic with or without contrast agent"
-                        
+                        "valueCoding": {
+                          "code": "Anaesthetic with or without contrast agent",
+                          "display": "Anaesthetic with or without contrast agent"
+                        }
                       },
                       {
-                        "valueString": "Corticosteroid with or without contrast agent"
-                        
+                        "valueCoding": {
+                          "code": "Corticosteroid with or without contrast agent",
+                          "display": "Corticosteroid with or without contrast agent"
+                        }
                       },
                       {
-                        "valueString": "Unknown" 
+                        "valueCoding": {
+                          "code": "Unknown",
+                          "display": "Unknown"
+                        }
                       }
                     ]
                 }
