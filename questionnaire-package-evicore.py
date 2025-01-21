@@ -244,6 +244,156 @@ def main():
     },
     {
       "resource": {
+        "resourceType": "ValueSet",
+        "id": "2.16.840.1.113883.3.464.1003.113.12.1035",
+        "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-01-21T11:31:57.963+00:00",
+            "source": "#ELOkPYScer0Zdt2B"
+        },
+        "url": "https://fhir-dev.mettles.com/baseServer/fhir/ValueSet/2.16.840.1.113883.3.464.1003.113.12.1035",
+        "identifier": [
+            {
+                "system": "urn:ietf:rfc:3986",
+                "value": "2.16.840.1.113883.3.464.1003.113.12.1035"
+            }
+        ],
+        "version": "Latest",
+        "name": "CTScanofLowerSpine",
+        "title": "CT Scan of Lower Spine",
+        "status": "active",
+        "publisher": "NLM",
+        "compose": {
+            "include": [
+                {
+                    "system": "http://loinc.org",
+                    "version": "2.78",
+                    "concept": [
+                        {
+                            "code": "24963-1",
+                            "display": "CT Lumbar spine"
+                        },
+                        {
+                            "code": "24964-9",
+                            "display": "CT Lumbar spine W contrast IV"
+                        },
+                        {
+                            "code": "24965-6",
+                            "display": "CT Lumbar spine W contrast IT"
+                        },
+                        {
+                            "code": "30620-9",
+                            "display": "CT Lumbar spine WO contrast"
+                        },
+                        {
+                            "code": "36058-6",
+                            "display": "CT Sacrum"
+                        },
+                        {
+                            "code": "36069-3",
+                            "display": "XR tomography Lumbar spine"
+                        },
+                        {
+                            "code": "36110-5",
+                            "display": "CT Lumbar spine limited WO contrast"
+                        },
+                        {
+                            "code": "36245-9",
+                            "display": "CT Sacrum W contrast IV"
+                        },
+                        {
+                            "code": "36390-3",
+                            "display": "CT Sacrum WO and W contrast IV"
+                        },
+                        {
+                            "code": "36402-6",
+                            "display": "CT Lumbar spine WO and W contrast IV"
+                        },
+                        {
+                            "code": "36520-5",
+                            "display": "CT Sacrum WO contrast"
+                        },
+                        {
+                            "code": "37232-6",
+                            "display": "CT Spine lumbosacral junction"
+                        },
+                        {
+                            "code": "37288-8",
+                            "display": "CT Spine lumbosacral junction WO contrast"
+                        },
+                        {
+                            "code": "37509-7",
+                            "display": "CT Lumbar spine W contrast intradisc"
+                        },
+                        {
+                            "code": "37653-3",
+                            "display": "XR tomography Sacrum"
+                        },
+                        {
+                            "code": "44114-7",
+                            "display": "CT Lumbar spine WO and W contrast IT"
+                        },
+                        {
+                            "code": "69116-2",
+                            "display": "CT Sacrum and Coccyx"
+                        }
+                    ]
+                }
+            ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "2.16.840.1.113762.1.4.1200.131",
+        "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-01-21T11:31:57.280+00:00",
+            "source": "#d7D8YFrbxPsgj5FS"
+        },
+        "url": "https://fhir-dev.mettles.com/baseServer/fhir/ValueSet/2.16.840.1.113762.1.4.1200.131",
+        "identifier": [
+            {
+                "system": "urn:ietf:rfc:3986",
+                "value": "2.16.840.1.113762.1.4.1200.131"
+            }
+        ],
+        "version": "Latest",
+        "name": "MRILOWBACK",
+        "title": "MRI LOW BACK",
+        "status": "active",
+        "publisher": "NLM",
+        "compose": {
+            "include": [
+                {
+                    "system": "http://loinc.org",
+                    "version": "2.78",
+                    "concept": [
+                        {
+                            "code": "24967-2",
+                            "display": "MR Lumbar spine WO and W contrast IV"
+                        },
+                        {
+                            "code": "24968-0",
+                            "display": "MR Lumbar spine"
+                        },
+                        {
+                            "code": "30678-7",
+                            "display": "MR Lumbar spine W contrast IV"
+                        },
+                        {
+                            "code": "30679-5",
+                            "display": "MR Lumbar spine WO contrast"
+                        }
+                    ]
+                }
+            ]
+        }
+      }
+    },
+    {
+      "resource": {
           "resourceType": "Library",
           "version": "1.0.0",
           "id": "library-spineepidural-epidural",
@@ -277,7 +427,7 @@ def main():
           "content": [
               {
                   "contentType": "text/cql",
-                  "data":"bGlicmFyeSBlcGlkdXJhbCB2ZXJzaW9uICcxLjAuMCcKCnVzaW5nIEZISVIgdmVyc2lvbiAnNC4wLjAnCgppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4wJyBjYWxsZWQgRkhJUkhlbHBlcnMKCmNvZGVzeXN0ZW0gIklDRDEwQ00iOiAnaHR0cDovL2hsNy5vcmcvZmhpci9zaWQvaWNkLTEwLWNtJwpjb2Rlc3lzdGVtICJTTk9NRURDVCI6ICdodHRwOi8vc25vbWVkLmluZm8vc2N0Jwpjb2Rlc3lzdGVtICJMT0lOQyI6ICdodHRwOi8vbG9pbmMub3JnJwpjb2Rlc3lzdGVtICJIQ1BDUyI6ICdodHRwczovL2hjcGNzLmNvZGVzLycKY29kZXN5c3RlbSAiQ1BUIjogJ2h0dHA6Ly93d3cuYW1hLWFzc24ub3JnL2dvL2NwdCcKCnZhbHVlc2V0ICJCaW9sb2dpY3MiOiAnMi4xNi44NDAuMS4xMTM4ODMuMy42MDM3LjEwMDEuMjMuOTkuNTEnCnZhbHVlc2V0ICJBbmFlc3RoZXRpY3MiOiAnMi4xNi44NDAuMS4xMTM4ODMuMy42MDM3LjEwMDEuMjMuOTkuNTInCnZhbHVlc2V0ICJDb3J0aWNvc3Rlcm9pZHMiOicyLjE2Ljg0MC4xLjExMzg4My4zLjYwMzcuMTAwMS4yMy45OS41MycKdmFsdWVzZXQgIk90aGVyIEluamVjdGF0ZSI6JzIuMTYuODQwLjEuMTEzODgzLjMuNjAzNy4xMDAxLjIzLjk5LjU0JwoKcGFyYW1ldGVyICJFbmNvdW50ZXIiIEVuY291bnRlcgpwYXJhbWV0ZXIgIlNlcnZpY2VSZXF1ZXN0IiBTZXJ2aWNlUmVxdWVzdAoKY29udGV4dCBQYXRpZW50CgpkZWZpbmUgQmlvbG9naWNzSW5qZWN0YXRlOgogICAiU2VydmljZVJlcXVlc3QiIFAKICAgICAgICB3aGVyZSBQLmludGVudC52YWx1ZSA9ICdvcmRlcicKICAgICAgICBhbmQgZXhpc3RzICggUC5jb2RlLmNvZGluZyBDCiAgICAgICAgICB3aGVyZSBDIGluICJCaW9sb2dpY3MiKQoKZGVmaW5lIEFuYWVzdGhldGljSW5qZWN0YXRlOgogICAgIlNlcnZpY2VSZXF1ZXN0IiBQCiAgICAgICAgd2hlcmUgUC5pbnRlbnQudmFsdWUgPSAnb3JkZXInCiAgICAgICAgYW5kIGV4aXN0cyAoIFAuY29kZS5jb2RpbmcgQwogICAgICAgICAgd2hlcmUgQyBpbiAiQW5hZXN0aGV0aWNzIikKCmRlZmluZSBDb3J0aWNvc3Rlcm9pZEluamVjdGF0ZToKICAgICJTZXJ2aWNlUmVxdWVzdCIgUAogICAgICAgIHdoZXJlIFAuaW50ZW50LnZhbHVlID0gJ29yZGVyJwogICAgICAgIGFuZCBleGlzdHMgKCBQLmNvZGUuY29kaW5nIEMKICAgICAgICAgIHdoZXJlIEMgaW4gIkNvcnRpY29zdGVyb2lkcyIpCgpkZWZpbmUgT3RoZXJJbmplY3RhdGU6CiAgICAiU2VydmljZVJlcXVlc3QiIFAKICAgICAgICB3aGVyZSBQLmludGVudC52YWx1ZSA9ICdvcmRlcicKICAgICAgICBhbmQgZXhpc3RzICggUC5jb2RlLmNvZGluZyBDCiAgICAgICAgICB3aGVyZSBDIGluICJPdGhlciBJbmplY3RhdGUiKQoKZGVmaW5lIEluamVjdGF0ZVR5cGU6CiAgICB7KGlmICgiQmlvbG9naWNzSW5qZWN0YXRlIiBpcyBub3QgbnVsbCkgdGhlbiAnQmlvbG9naWNzJwogICAgICBlbHNlICcnCiAgICApLChpZiAoIkFuYWVzdGhldGljSW5qZWN0YXRlIiBpcyBub3QgbnVsbCkgdGhlbiAnQW5hZXN0aGV0aWMgd2l0aCBvciB3aXRob3V0IGNvbnRyYXN0IGFnZW50JwogICAgZWxzZSAnJwogICAgKSwoaWYgKCJDb3J0aWNvc3Rlcm9pZEluamVjdGF0ZSIgaXMgbm90IG51bGwpIHRoZW4gJ0NvcnRpY29zdGVyb2lkIHdpdGggb3Igd2l0aG91dCBjb250cmFzdCBhZ2VudCcKICAgIGVsc2UgJycKICAgICksKGlmICgiT3RoZXJJbmplY3RhdGUiIGlzIG5vdCBudWxsKSB0aGVuICdPdGhlciBJbmplY3RhdGUocyknCiAgICBlbHNlICcnCiAgICApLChpZiAoKCJCaW9sb2dpY3NJbmplY3RhdGUiIGlzIG51bGwpCiAgICAgICAgICAgIGFuZCAoIkFuYWVzdGhldGljSW5qZWN0YXRlIiBpcyBudWxsKQogICAgICAgICAgICBhbmQgKCJDb3J0aWNvc3Rlcm9pZEluamVjdGF0ZSIgaXMgbnVsbCkKICAgICAgICAgICAgYW5kICgiT3RoZXJJbmplY3RhdGUiIGlzIG51bGwpKQogICAgICAgICAgICB0aGVuICdVbmtub3duJwogICAgICAgICAgICBlbHNlICcnKQogICAgfQoKZGVmaW5lIFRyZWF0bWVudEV4cGVjdGVkRGF0ZToKICAgICJnZXREYXRlRm9ybWF0IihUb1N0cmluZyhUb0RhdGUoc3RhcnQgb2YgTm9ybWFsaXplSW50ZXJ2YWwoIlNlcnZpY2VSZXF1ZXN0Ii5vY2N1cnJlbmNlKSkpKQoKZGVmaW5lIGZ1bmN0aW9uICJnZXREYXRlRm9ybWF0IihkYXRlIFN0cmluZyk6CiAgU3BsaXQoZGF0ZSwgJy0nKQoKZGVmaW5lIFRyZWF0bWVudFN0YXJ0RGF0ZToKICAiVHJlYXRtZW50RXhwZWN0ZWREYXRlIlsxXSArICcvJyArICJUcmVhdG1lbnRFeHBlY3RlZERhdGUiWzJdICsgJy8nICsgIlRyZWF0bWVudEV4cGVjdGVkRGF0ZSJbMF0KCmRlZmluZSBmdW5jdGlvbiBOb3JtYWxpemVJbnRlcnZhbChvbnNldCBDaG9pY2U8RkhJUi5kYXRlVGltZSwgRkhJUi5BZ2UsIEZISVIuUGVyaW9kLCBGSElSLlJhbmdlLCBGSElSLnN0cmluZz4pOgogIGlmIG9uc2V0IGlzIEZISVIuZGF0ZVRpbWUgdGhlbiAKICAgIEludGVydmFsW0ZISVJIZWxwZXJzLlRvRGF0ZVRpbWUob25zZXQgYXMgRkhJUi5kYXRlVGltZSksIEZISVJIZWxwZXJzLlRvRGF0ZVRpbWUob25zZXQgYXMgRkhJUi5kYXRlVGltZSldIAogIGVsc2UgaWYgb25zZXQgaXMgRkhJUi5QZXJpb2QgdGhlbiAKICAgIEZISVJIZWxwZXJzLlRvSW50ZXJ2YWwob25zZXQgYXMgRkhJUi5QZXJpb2QpIAogIGVsc2UgaWYgb25zZXQgaXMgRkhJUi5BZ2UgdGhlbiAKICAgIEludGVydmFsW0ZISVJIZWxwZXJzLlRvRGF0ZShQYXRpZW50LmJpcnRoRGF0ZSkgKyBGSElSSGVscGVycy5Ub1F1YW50aXR5KG9uc2V0IGFzIEZISVIuQWdlKSwgRkhJUkhlbHBlcnMuVG9EYXRlKFBhdGllbnQuYmlydGhEYXRlKSArIEZISVJIZWxwZXJzLlRvUXVhbnRpdHkob25zZXQgYXMgRkhJUi5BZ2UpICsgMSB5ZWFyXSAKICBlbHNlIAogICAgbnVsbCAKCgo="
+                  "data":"bGlicmFyeSBlcGlkdXJhbCB2ZXJzaW9uICcxLjAuMCcKCnVzaW5nIEZISVIgdmVyc2lvbiAnNC4wLjAnCgppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4wJyBjYWxsZWQgRkhJUkhlbHBlcnMKCmNvZGVzeXN0ZW0gIklDRDEwQ00iOiAnaHR0cDovL2hsNy5vcmcvZmhpci9zaWQvaWNkLTEwLWNtJwpjb2Rlc3lzdGVtICJTTk9NRURDVCI6ICdodHRwOi8vc25vbWVkLmluZm8vc2N0Jwpjb2Rlc3lzdGVtICJMT0lOQyI6ICdodHRwOi8vbG9pbmMub3JnJwpjb2Rlc3lzdGVtICJIQ1BDUyI6ICdodHRwczovL2hjcGNzLmNvZGVzLycKY29kZXN5c3RlbSAiQ1BUIjogJ2h0dHA6Ly93d3cuYW1hLWFzc24ub3JnL2dvL2NwdCcKCnZhbHVlc2V0ICJCaW9sb2dpY3MiOiAnMi4xNi44NDAuMS4xMTM4ODMuMy42MDM3LjEwMDEuMjMuOTkuNTEnCnZhbHVlc2V0ICJBbmFlc3RoZXRpY3MiOiAnMi4xNi44NDAuMS4xMTM4ODMuMy42MDM3LjEwMDEuMjMuOTkuNTInCnZhbHVlc2V0ICJDb3J0aWNvc3Rlcm9pZHMiOicyLjE2Ljg0MC4xLjExMzg4My4zLjYwMzcuMTAwMS4yMy45OS41MycKdmFsdWVzZXQgIk90aGVyIEluamVjdGF0ZSI6JzIuMTYuODQwLjEuMTEzODgzLjMuNjAzNy4xMDAxLjIzLjk5LjU0Jwp2YWx1ZXNldCAiQ1RTY2Fub2ZMb3dlclNwaW5lIjogJzIuMTYuODQwLjEuMTEzODgzLjMuNDY0LjEwMDMuMTEzLjEyLjEwMzUnCnZhbHVlc2V0ICJNUklMT1dCQUNLIjogJzIuMTYuODQwLjEuMTEzNzYyLjEuNC4xMjAwLjEzMScKdmFsdWVzZXQgIkJvZHlzaWRlIjogJzIuMTYuODQwLjEuMTEzODgzLjMuNjAzNy4xMDAxLjIzLjk5LjU1JwoKY29kZSAiUG9zdGhlcnBldGljIHRyaWdlbWluYWwgbmV1cmFsZ2lhIjogJ0IwMi4yMicgZnJvbSAiSUNEMTBDTSIgZGlzcGxheSAnUG9zdGhlcnBldGljIHRyaWdlbWluYWwgbmV1cmFsZ2lhJwpjb2RlICJMZWZ0IChxdWFsaWZpZXIgdmFsdWUpIjogJzc3NzEwMDAnIGZyb20gIlNOT01FRENUIiBkaXNwbGF5ICdMZWZ0IChxdWFsaWZpZXIgdmFsdWUpJwpjb2RlICJSaWdodCAocXVhbGlmaWVyIHZhbHVlKSI6ICcyNDAyODAwNycgZnJvbSAiU05PTUVEQ1QiIGRpc3BsYXkgJ1JpZ2h0IChxdWFsaWZpZXIgdmFsdWUpJwpjb2RlICJSaWdodCBhbmQgbGVmdCAocXVhbGlmaWVyIHZhbHVlKSIgOiAnNTE0NDAwMDInIGZyb20gIlNOT01FRENUIiBkaXNwbGF5ICdSaWdodCBhbmQgbGVmdCAocXVhbGlmaWVyIHZhbHVlKScKY29kZSAiU3RydWN0dXJlIG9mIEMxLUMyIGludGVydHJhbnN2ZXJzYXJpdXMgY2VydmljaXMgYW50ZXJpb3IgbXVzY2xlIChib2R5IHN0cnVjdHVyZSkiOiAnMTE3OTE1MjAwOSdmcm9tICJTTk9NRURDVCIgZGlzcGxheSAnU3RydWN0dXJlIG9mIEMxLUMyIGludGVydHJhbnN2ZXJzYXJpdXMgY2VydmljaXMgYW50ZXJpb3IgbXVzY2xlIChib2R5IHN0cnVjdHVyZSknCmNvZGUgIlN0cnVjdHVyZSBvZiBDMS1DMiBpbnRlcnRyYW5zdmVyc2FyaXVzIGNlcnZpY2lzIHBvc3RlcmlvciBtdXNjbGUgKGJvZHkgc3RydWN0dXJlKSI6ICcxMTc5MTUzMDA0JyBmcm9tICJTTk9NRURDVCIgZGlzcGxheSAnU3RydWN0dXJlIG9mIEMxLUMyIGludGVydHJhbnN2ZXJzYXJpdXMgY2VydmljaXMgcG9zdGVyaW9yIG11c2NsZSAoYm9keSBzdHJ1Y3R1cmUpJwpjb2RlICJTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiBzZWNvbmQgYW5kIHRoaXJkIHZlcnRlYnJhIG9mIGNlcnZpY2FsIHNwaW5lIChib2R5IHN0cnVjdHVyZSkiOiAnMTE3OTE1NjAwNycgZnJvbSAiU05PTUVEQ1QiIGRpc3BsYXkgJ1N0cnVjdHVyZSBvZiBmYWNldCBqb2ludCBiZXR3ZWVuIHNlY29uZCBhbmQgdGhpcmQgdmVydGVicmEgb2YgY2VydmljYWwgc3BpbmUgKGJvZHkgc3RydWN0dXJlKScKY29kZSAiU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gdGhpcmQgYW5kIGZvdXJ0aCB2ZXJ0ZWJyYSBvZiBjZXJ2aWNhbCBzcGluZSAoYm9keSBzdHJ1Y3R1cmUpIjogJzExNzkyMDAwMDQnIGZyb20gIlNOT01FRENUIiBkaXNwbGF5ICdTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiB0aGlyZCBhbmQgZm91cnRoIHZlcnRlYnJhIG9mIGNlcnZpY2FsIHNwaW5lIChib2R5IHN0cnVjdHVyZSknCmNvZGUgIlN0cnVjdHVyZSBvZiBmYWNldCBqb2ludCBiZXR3ZWVuIGZvdXJ0aCBhbmQgZmlmdGggdmVydGVicmEgb2YgY2VydmljYWwgc3BpbmUgKGJvZHkgc3RydWN0dXJlKSI6ICcxMTc5MjA3MDAxJyBmcm9tICJTTk9NRURDVCIgZGlzcGxheSAnU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gZm91cnRoIGFuZCBmaWZ0aCB2ZXJ0ZWJyYSBvZiBjZXJ2aWNhbCBzcGluZSAoYm9keSBzdHJ1Y3R1cmUpJwpjb2RlICJTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiBmaWZ0aCBhbmQgc2l4dGggdmVydGVicmEgb2YgY2VydmljYWwgc3BpbmUgKGJvZHkgc3RydWN0dXJlKSI6ICcxMTc5MjMzMDA5JyBmcm9tICJTTk9NRURDVCIgZGlzcGxheSAnU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gZmlmdGggYW5kIHNpeHRoIHZlcnRlYnJhIG9mIGNlcnZpY2FsIHNwaW5lIChib2R5IHN0cnVjdHVyZSknCmNvZGUgIlN0cnVjdHVyZSBvZiBDNi1DNyBpbnRlcnRyYW5zdmVyc2FyaXVzIGNlcnZpY2lzIGFudGVyaW9yIG11c2NsZSAoYm9keSBzdHJ1Y3R1cmUpIjogJzExNzkyNDYwMDQnIGZyb20gIlNOT01FRENUIiBkaXNwbGF5ICdTdHJ1Y3R1cmUgb2YgQzYtQzcgaW50ZXJ0cmFuc3ZlcnNhcml1cyBjZXJ2aWNpcyBhbnRlcmlvciBtdXNjbGUgKGJvZHkgc3RydWN0dXJlKScKY29kZSAiU3RydWN0dXJlIG9mIEM2LUM3IGludGVydHJhbnN2ZXJzYXJpdXMgY2VydmljaXMgcG9zdGVyaW9yIG11c2NsZSAoYm9keSBzdHJ1Y3R1cmUpIjogJzExNzkzMDIwMDUnIGZyb20gIlNOT01FRENUIiBkaXNwbGF5ICdTdHJ1Y3R1cmUgb2YgQzYtQzcgaW50ZXJ0cmFuc3ZlcnNhcml1cyBjZXJ2aWNpcyBwb3N0ZXJpb3IgbXVzY2xlIChib2R5IHN0cnVjdHVyZSknCmNvZGUgIlN0cnVjdHVyZSBvZiBDNy1UMSBpbnRlcnRyYW5zdmVyc2FyaXVzIGNlcnZpY2lzIGFudGVyaW9yIG11c2NsZSAoYm9keSBzdHJ1Y3R1cmUpIjogJzExNzkzMDMwMDAnIGZyb20gIlNOT01FRENUIiBkaXNwbGF5ICdTdHJ1Y3R1cmUgb2YgQzctVDEgaW50ZXJ0cmFuc3ZlcnNhcml1cyBjZXJ2aWNpcyBhbnRlcmlvciBtdXNjbGUgKGJvZHkgc3RydWN0dXJlKScKY29kZSAiU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gZmlyc3QgYW5kIHNlY29uZCB2ZXJ0ZWJyYSBvZiB0aG9yYWNpYyBzcGluZSAoYm9keSBzdHJ1Y3R1cmUpIjogJzExNzkzMTYwMDAnIGZyb20gIlNOT01FRENUIiBkaXNwbGF5ICdTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiBmaXJzdCBhbmQgc2Vjb25kIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSknCmNvZGUgIlN0cnVjdHVyZSBvZiBmYWNldCBqb2ludCBiZXR3ZWVuIHNlY29uZCBhbmQgdGhpcmQgdmVydGVicmEgb2YgdGhvcmFjaWMgc3BpbmUgKGJvZHkgc3RydWN0dXJlKSI6ICcxMTc5MzE5MDA3JyBmcm9tICJTTk9NRURDVCIgZGlzcGxheSAnU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gc2Vjb25kIGFuZCB0aGlyZCB2ZXJ0ZWJyYSBvZiB0aG9yYWNpYyBzcGluZSAoYm9keSBzdHJ1Y3R1cmUpJwpjb2RlICJTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiB0aGlyZCBhbmQgZm91cnRoIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSkiOiAnMTE3OTMyMDAwMScgZnJvbSAiU05PTUVEQ1QiIGRpc3BsYXkgJ1N0cnVjdHVyZSBvZiBmYWNldCBqb2ludCBiZXR3ZWVuIHRoaXJkIGFuZCBmb3VydGggdmVydGVicmEgb2YgdGhvcmFjaWMgc3BpbmUgKGJvZHkgc3RydWN0dXJlKScKY29kZSAiU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gZm91cnRoIGFuZCBmaWZ0aCB2ZXJ0ZWJyYSBvZiB0aG9yYWNpYyBzcGluZSAoYm9keSBzdHJ1Y3R1cmUpIjogJzExNzkzMjEwMDInIGZyb20gIlNOT01FRENUIiBkaXNwbGF5ICdTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiBmb3VydGggYW5kIGZpZnRoIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSknCmNvZGUgIlN0cnVjdHVyZSBvZiBmYWNldCBqb2ludCBiZXR3ZWVuIGZpZnRoIGFuZCBzaXh0aCB2ZXJ0ZWJyYSBvZiB0aG9yYWNpYyBzcGluZSAoYm9keSBzdHJ1Y3R1cmUpIjogJzExNzkzMjIwMDknIGZyb20gIlNOT01FRENUIiBkaXNwbGF5ICdTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiBmaWZ0aCBhbmQgc2l4dGggdmVydGVicmEgb2YgdGhvcmFjaWMgc3BpbmUgKGJvZHkgc3RydWN0dXJlKScKY29kZSAiU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gc2l4dGggYW5kIHNldmVudGggdmVydGVicmEgb2YgdGhvcmFjaWMgc3BpbmUgKGJvZHkgc3RydWN0dXJlKSI6ICcxMTc5MzIzMDA0JyBmcm9tICJTTk9NRURDVCIgZGlzcGxheSAnU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gc2l4dGggYW5kIHNldmVudGggdmVydGVicmEgb2YgdGhvcmFjaWMgc3BpbmUgKGJvZHkgc3RydWN0dXJlKScKY29kZSAiU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gc2V2ZW50aCBhbmQgZWlnaHRoIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSkiOiAnMTE3OTMyNDAwNScgZnJvbSAiU05PTUVEQ1QiIGRpc3BsYXkgJ1N0cnVjdHVyZSBvZiBmYWNldCBqb2ludCBiZXR3ZWVuIHNldmVudGggYW5kIGVpZ2h0aCB2ZXJ0ZWJyYSBvZiB0aG9yYWNpYyBzcGluZSAoYm9keSBzdHJ1Y3R1cmUpJwpjb2RlICJTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiBlaWdodGggYW5kIG5pbnRoIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSkiOiAnMTE3OTMyNTAwNicgZnJvbSAiU05PTUVEQ1QiIGRpc3BsYXkgJ1N0cnVjdHVyZSBvZiBmYWNldCBqb2ludCBiZXR3ZWVuIGVpZ2h0aCBhbmQgbmludGggdmVydGVicmEgb2YgdGhvcmFjaWMgc3BpbmUgKGJvZHkgc3RydWN0dXJlKScKY29kZSAiU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gbmludGggYW5kIHRlbnRoIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSkiOiAnMTE3OTMyNjAwNycgZnJvbSAiU05PTUVEQ1QiIGRpc3BsYXkgJ1N0cnVjdHVyZSBvZiBmYWNldCBqb2ludCBiZXR3ZWVuIG5pbnRoIGFuZCB0ZW50aCB2ZXJ0ZWJyYSBvZiB0aG9yYWNpYyBzcGluZSAoYm9keSBzdHJ1Y3R1cmUpJwpjb2RlICJTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiB0ZW50aCBhbmQgZWxldmVudGggdmVydGVicmEgb2YgdGhvcmFjaWMgc3BpbmUgKGJvZHkgc3RydWN0dXJlKSI6ICcxMTc5MzE3MDA5JyBmcm9tICJTTk9NRURDVCIgZGlzcGxheSAnU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gdGVudGggYW5kIGVsZXZlbnRoIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSknCmNvZGUgIlN0cnVjdHVyZSBvZiBmYWNldCBqb2ludCBiZXR3ZWVuIGVsZXZlbnRoIGFuZCB0d2VsZnRoIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSkiOiAnMTE3OTMxODAwNCcgZnJvbSAiU05PTUVEQ1QiIGRpc3BsYXkgJ1N0cnVjdHVyZSBvZiBmYWNldCBqb2ludCBiZXR3ZWVuIGVsZXZlbnRoIGFuZCB0d2VsZnRoIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSknCmNvZGUgIlN0cnVjdHVyZSBvZiBUMTItTDEgaW50ZXJ0cmFuc3ZlcnNhcml1cyB0aG9yYWNpcyBtdXNjbGUgKGJvZHkgc3RydWN0dXJlKSI6ICcxMTc5MzE1MDAxJyBmcm9tICJTTk9NRURDVCIgZGlzcGxheSAnU3RydWN0dXJlIG9mIFQxMi1MMSBpbnRlcnRyYW5zdmVyc2FyaXVzIHRob3JhY2lzIG11c2NsZSAoYm9keSBzdHJ1Y3R1cmUpJwoKCgpwYXJhbWV0ZXIgIkVuY291bnRlciIgRW5jb3VudGVyCnBhcmFtZXRlciAiU2VydmljZVJlcXVlc3QiIFNlcnZpY2VSZXF1ZXN0Cgpjb250ZXh0IFBhdGllbnQKCmRlZmluZSBCaW9sb2dpY3NJbmplY3RhdGU6CiAgICJTZXJ2aWNlUmVxdWVzdCIgUAogICAgICAgIHdoZXJlIFAuaW50ZW50LnZhbHVlID0gJ29yZGVyJwogICAgICAgIGFuZCBleGlzdHMgKCBQLmNvZGUuY29kaW5nIEMKICAgICAgICAgIHdoZXJlIEMgaW4gIkJpb2xvZ2ljcyIpCgpkZWZpbmUgQW5hZXN0aGV0aWNJbmplY3RhdGU6CiAgICAiU2VydmljZVJlcXVlc3QiIFAKICAgICAgICB3aGVyZSBQLmludGVudC52YWx1ZSA9ICdvcmRlcicKICAgICAgICBhbmQgZXhpc3RzICggUC5jb2RlLmNvZGluZyBDCiAgICAgICAgICB3aGVyZSBDIGluICJBbmFlc3RoZXRpY3MiKQoKZGVmaW5lIENvcnRpY29zdGVyb2lkSW5qZWN0YXRlOgogICAgIlNlcnZpY2VSZXF1ZXN0IiBQCiAgICAgICAgd2hlcmUgUC5pbnRlbnQudmFsdWUgPSAnb3JkZXInCiAgICAgICAgYW5kIGV4aXN0cyAoIFAuY29kZS5jb2RpbmcgQwogICAgICAgICAgd2hlcmUgQyBpbiAiQ29ydGljb3N0ZXJvaWRzIikKCmRlZmluZSBPdGhlckluamVjdGF0ZToKICAgICJTZXJ2aWNlUmVxdWVzdCIgUAogICAgICAgIHdoZXJlIFAuaW50ZW50LnZhbHVlID0gJ29yZGVyJwogICAgICAgIGFuZCBleGlzdHMgKCBQLmNvZGUuY29kaW5nIEMKICAgICAgICAgIHdoZXJlIEMgaW4gIk90aGVyIEluamVjdGF0ZSIpCgpkZWZpbmUgSW5qZWN0YXRlVHlwZToKICAgIHsoaWYgKCJCaW9sb2dpY3NJbmplY3RhdGUiIGlzIG5vdCBudWxsKSB0aGVuICdCaW9sb2dpY3MnCiAgICAgIGVsc2UgJycKICAgICksKGlmICgiQW5hZXN0aGV0aWNJbmplY3RhdGUiIGlzIG5vdCBudWxsKSB0aGVuICdBbmFlc3RoZXRpYyB3aXRoIG9yIHdpdGhvdXQgY29udHJhc3QgYWdlbnQnCiAgICBlbHNlICcnCiAgICApLChpZiAoIkNvcnRpY29zdGVyb2lkSW5qZWN0YXRlIiBpcyBub3QgbnVsbCkgdGhlbiAnQ29ydGljb3N0ZXJvaWQgd2l0aCBvciB3aXRob3V0IGNvbnRyYXN0IGFnZW50JwogICAgZWxzZSAnJwogICAgKSwoaWYgKCJPdGhlckluamVjdGF0ZSIgaXMgbm90IG51bGwpIHRoZW4gJ090aGVyIEluamVjdGF0ZShzKScKICAgIGVsc2UgJycKICAgICksKGlmICgoIkJpb2xvZ2ljc0luamVjdGF0ZSIgaXMgbnVsbCkKICAgICAgICAgICAgYW5kICgiQW5hZXN0aGV0aWNJbmplY3RhdGUiIGlzIG51bGwpCiAgICAgICAgICAgIGFuZCAoIkNvcnRpY29zdGVyb2lkSW5qZWN0YXRlIiBpcyBudWxsKQogICAgICAgICAgICBhbmQgKCJPdGhlckluamVjdGF0ZSIgaXMgbnVsbCkpCiAgICAgICAgICAgIHRoZW4gJ1Vua25vd24nCiAgICAgICAgICAgIGVsc2UgJycpCiAgICB9CgpkZWZpbmUgVHJlYXRtZW50RXhwZWN0ZWREYXRlOgogICAgImdldERhdGVGb3JtYXQiKFRvU3RyaW5nKFRvRGF0ZShzdGFydCBvZiBOb3JtYWxpemVJbnRlcnZhbCgiU2VydmljZVJlcXVlc3QiLm9jY3VycmVuY2UpKSkpCgpkZWZpbmUgZnVuY3Rpb24gImdldERhdGVGb3JtYXQiKGRhdGUgU3RyaW5nKToKICBTcGxpdChkYXRlLCAnLScpCgpkZWZpbmUgVHJlYXRtZW50U3RhcnREYXRlOgogICJUcmVhdG1lbnRFeHBlY3RlZERhdGUiWzFdICsgJy8nICsgIlRyZWF0bWVudEV4cGVjdGVkRGF0ZSJbMl0gKyAnLycgKyAiVHJlYXRtZW50RXhwZWN0ZWREYXRlIlswXQoKZGVmaW5lIFBvc3RIZXJwZXRpY05ldXJhbGdpYToKICBMYXN0KChbQ29uZGl0aW9uXUMKICAgICAgICB3aGVyZSAiVG9Db2RlIihGaXJzdChDLmNvZGUuY29kaW5nKSkgPSAiUG9zdGhlcnBldGljIHRyaWdlbWluYWwgbmV1cmFsZ2lhIilDb24KCQkJICAgICAgICB3aGVyZSBGaXJzdChDb24uY2xpbmljYWxTdGF0dXMuY29kaW5nKS5jb2RlLnZhbHVlID0gJ2FjdGl2ZScKCQkJIAkgICAgICBhbmQgRmlyc3QoQ29uLnZlcmlmaWNhdGlvblN0YXR1cy5jb2RpbmcpLmNvZGUudmFsdWUgPSAnY29uZmlybWVkJykKCmRlZmluZSBQcm9jZWR1cmVCb2R5c2l0ZToKICBMYXN0KChbUHJvY2VkdXJlXVAKICAgICAgICAgIHdoZXJlIEZpcnN0KFAuY29kZS5jb2RpbmcpIGluICJCaW9sb2dpY3MiCiAgICAgICAgICAgICAgb3IgRmlyc3QoUC5jb2RlLmNvZGluZykgaW4gIkFuYWVzdGhldGljcyIKICAgICAgICAgICAgICBvciBGaXJzdChQLmNvZGUuY29kaW5nKSBpbiAiQ29ydGljb3N0ZXJvaWRzIgogICAgICAgICAgICAgIG9yIEZpcnN0KFAuY29kZS5jb2RpbmcpIGluICJPdGhlciBJbmplY3RhdGUiKSBQcm8KICAgICAgICAgICAgICAgIHdoZXJlIFAuIHN0YXR1cy52YWx1ZSBpbiB7J3ByZXBhcmF0aW9uJywgJ2luLXByb2dyZXNzJ30pCgpkZWZpbmUgUmVxdWVzdEJvZHlzaXRlOgogIExhc3QoKCJTZXJ2aWNlUmVxdWVzdCIgUAogICAgICAgICAgd2hlcmUgRmlyc3QoUC5jb2RlLmNvZGluZykgaW4gIkJpb2xvZ2ljcyIKICAgICAgICAgICAgICBvciBGaXJzdChQLmNvZGUuY29kaW5nKSBpbiAiQW5hZXN0aGV0aWNzIgogICAgICAgICAgICAgIG9yIEZpcnN0KFAuY29kZS5jb2RpbmcpIGluICJDb3J0aWNvc3Rlcm9pZHMiCiAgICAgICAgICAgICAgb3IgRmlyc3QoUC5jb2RlLmNvZGluZykgaW4gIk90aGVyIEluamVjdGF0ZSIpU2VyCiAgICAgICAgICAgICAgICB3aGVyZSBTZXIuaW50ZW50LnZhbHVlID0gJ29yZGVyJykKCmRlZmluZSBib2R5U2l0ZUxldmVsOgogIENvYWxlc2NlKCJUb0NvZGUiKEZpcnN0KCJQcm9jZWR1cmVCb2R5c2l0ZSIuYm9keVNpdGUuY29kaW5nKSkuZGlzcGxheS52YWx1ZSwgIlRvQ29kZSIoRmlyc3QoIlJlcXVlc3RCb2R5c2l0ZSIuYm9keVNpdGUuY29kaW5nKSkuZGlzcGxheS52YWx1ZSApCgpkZWZpbmUgUHJvY2VkdXJlTGV2ZWw6CiAgeyhpZigoImJvZHlTaXRlTGV2ZWwiPSJTdHJ1Y3R1cmUgb2YgQzEtQzIgaW50ZXJ0cmFuc3ZlcnNhcml1cyBjZXJ2aWNpcyBhbnRlcmlvciBtdXNjbGUgKGJvZHkgc3RydWN0dXJlKSIpIG9yICgiYm9keVNpdGVMZXZlbCI9IlN0cnVjdHVyZSBvZiBDMS1DMiBpbnRlcnRyYW5zdmVyc2FyaXVzIGNlcnZpY2lzIHBvc3RlcmlvciBtdXNjbGUgKGJvZHkgc3RydWN0dXJlKSIpKQogICAgdGhlbiAnQzEtQzInCiAgICBlbHNlICcnKSwKICAgKGlmKCJib2R5U2l0ZUxldmVsIj0iU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gc2Vjb25kIGFuZCB0aGlyZCB2ZXJ0ZWJyYSBvZiBjZXJ2aWNhbCBzcGluZSAoYm9keSBzdHJ1Y3R1cmUpIikKICAgIHRoZW4gJ0MyLUMzJwogICAgZWxzZSAnJyksCiAgKGlmKCJib2R5U2l0ZUxldmVsIj0iU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gdGhpcmQgYW5kIGZvdXJ0aCB2ZXJ0ZWJyYSBvZiBjZXJ2aWNhbCBzcGluZSAoYm9keSBzdHJ1Y3R1cmUpIikKICAgIHRoZW4gJ0MzLUM0JwogICAgZWxzZSAnJyksCiAgKGlmKCJib2R5U2l0ZUxldmVsIj0iU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gZm91cnRoIGFuZCBmaWZ0aCB2ZXJ0ZWJyYSBvZiBjZXJ2aWNhbCBzcGluZSAoYm9keSBzdHJ1Y3R1cmUpIikKICAgIHRoZW4gJ0M0LUM1JwogICAgZWxzZSAnJyksCiAgKGlmKCJib2R5U2l0ZUxldmVsIj0iU3RydWN0dXJlIG9mIGZhY2V0IGpvaW50IGJldHdlZW4gZmlmdGggYW5kIHNpeHRoIHZlcnRlYnJhIG9mIGNlcnZpY2FsIHNwaW5lIChib2R5IHN0cnVjdHVyZSkiKQogICAgdGhlbiAnQzUtQzYnCiAgICBlbHNlICcnKSwKICAoaWYoKCJib2R5U2l0ZUxldmVsIj0iU3RydWN0dXJlIG9mIEM2LUM3IGludGVydHJhbnN2ZXJzYXJpdXMgY2VydmljaXMgYW50ZXJpb3IgbXVzY2xlIChib2R5IHN0cnVjdHVyZSkiKSBvciAoImJvZHlTaXRlTGV2ZWwiPSJTdHJ1Y3R1cmUgb2YgQzYtQzcgaW50ZXJ0cmFuc3ZlcnNhcml1cyBjZXJ2aWNpcyBwb3N0ZXJpb3IgbXVzY2xlIChib2R5IHN0cnVjdHVyZSkiKSkKICAgIHRoZW4gJ0M2LUM3JwogICAgZWxzZSAnJyksCiAgKGlmKCJib2R5U2l0ZUxldmVsIj0iU3RydWN0dXJlIG9mIEM3LVQxIGludGVydHJhbnN2ZXJzYXJpdXMgY2VydmljaXMgYW50ZXJpb3IgbXVzY2xlIChib2R5IHN0cnVjdHVyZSkiKQogICAgdGhlbiAnQzctVDEnCiAgICBlbHNlICcnKSwKICAoaWYoImJvZHlTaXRlTGV2ZWwiPSJTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiBmaXJzdCBhbmQgc2Vjb25kIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSkiKQogICAgdGhlbiAnVDEtVDInCiAgICBlbHNlICcnKSwKICAoaWYoImJvZHlTaXRlTGV2ZWwiPSJTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiBzZWNvbmQgYW5kIHRoaXJkIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSkiKQogICAgdGhlbiAnVDItVDMnCiAgICBlbHNlICcnKSwKICAoaWYoImJvZHlTaXRlTGV2ZWwiPSJTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiB0aGlyZCBhbmQgZm91cnRoIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSkiKQogICAgdGhlbiAnVDMtVDQnCiAgICBlbHNlICcnKSwKICAoaWYoImJvZHlTaXRlTGV2ZWwiPSJTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiBmb3VydGggYW5kIGZpZnRoIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSkiKQogICAgdGhlbiAnVDQtVDUnCiAgICBlbHNlICcnKSwKICAoaWYoImJvZHlTaXRlTGV2ZWwiPSJTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiBmaWZ0aCBhbmQgc2l4dGggdmVydGVicmEgb2YgdGhvcmFjaWMgc3BpbmUgKGJvZHkgc3RydWN0dXJlKSIpCiAgICB0aGVuICdUNS1UNicKICAgIGVsc2UgJycpLAogIChpZigiYm9keVNpdGVMZXZlbCI9IlN0cnVjdHVyZSBvZiBmYWNldCBqb2ludCBiZXR3ZWVuIHNpeHRoIGFuZCBzZXZlbnRoIHZlcnRlYnJhIG9mIHRob3JhY2ljIHNwaW5lIChib2R5IHN0cnVjdHVyZSkiKQogICAgdGhlbiAnVDYtVDcnCiAgICBlbHNlICcnKSwKICAoaWYoImJvZHlTaXRlTGV2ZWwiPSJTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiBzZXZlbnRoIGFuZCBlaWdodGggdmVydGVicmEgb2YgdGhvcmFjaWMgc3BpbmUgKGJvZHkgc3RydWN0dXJlKSIpCiAgICB0aGVuICdUNy1UOCcKICAgIGVsc2UgJycpLAogIChpZigiYm9keVNpdGVMZXZlbCI9IlN0cnVjdHVyZSBvZiBmYWNldCBqb2ludCBiZXR3ZWVuIGVpZ2h0aCBhbmQgbmludGggdmVydGVicmEgb2YgdGhvcmFjaWMgc3BpbmUgKGJvZHkgc3RydWN0dXJlKSIpCiAgICB0aGVuICdUOC1UOScKICAgIGVsc2UgJycpLAogIChpZigiYm9keVNpdGVMZXZlbCI9IlN0cnVjdHVyZSBvZiBmYWNldCBqb2ludCBiZXR3ZWVuIG5pbnRoIGFuZCB0ZW50aCB2ZXJ0ZWJyYSBvZiB0aG9yYWNpYyBzcGluZSAoYm9keSBzdHJ1Y3R1cmUpIikKICAgIHRoZW4gJ1QxMC1UMTEnCiAgICBlbHNlICcnKSwKICAoaWYoImJvZHlTaXRlTGV2ZWwiPSJTdHJ1Y3R1cmUgb2YgZmFjZXQgam9pbnQgYmV0d2VlbiBlbGV2ZW50aCBhbmQgdHdlbGZ0aCB2ZXJ0ZWJyYSBvZiB0aG9yYWNpYyBzcGluZSAoYm9keSBzdHJ1Y3R1cmUpIikKICAgIHRoZW4gJ1QxMS1UMTInCiAgICBlbHNlICcnKSwKICAoaWYoImJvZHlTaXRlTGV2ZWwiPSJTdHJ1Y3R1cmUgb2YgVDEyLUwxIGludGVydHJhbnN2ZXJzYXJpdXMgdGhvcmFjaXMgbXVzY2xlIChib2R5IHN0cnVjdHVyZSkiKQogICAgdGhlbiAnVDEyLUwxJwogICAgZWxzZSAnJyksCiAgZWxzZSAnVW5rbm93biBvciBub3Qgc3VyZScKICB9CgpkZWZpbmUgU2lkZU9mQm9keToKICBpZigiVG9Db2RlIigiUHJvY2VkdXJlQm9keXNpdGUiLmJvZHlTaXRlLmNvZGluZyk9ICJMZWZ0IChxdWFsaWZpZXIgdmFsdWUpIikKICAgIHRoZW4gJ0xlZnQgc2lkZSBvbmx5ICh1bmlsYXRlcmFsKScKICBlbHNlIGlmICgiVG9Db2RlIigiUHJvY2VkdXJlQm9keXNpdGUiLmJvZHlTaXRlLmNvZGluZyk9ICJSaWdodCAocXVhbGlmaWVyIHZhbHVlKSIpCiAgICB0aGVuICdSaWdodCBzaWRlIG9ubHkgKHVuaWxhdGVyYWwpJwogIGVsc2UgaWYgKCJUb0NvZGUiKCJQcm9jZWR1cmVCb2R5c2l0ZSIuYm9keVNpdGUuY29kaW5nKT0gIlJpZ2h0IGFuZCBsZWZ0IChxdWFsaWZpZXIgdmFsdWUpIikKICAgIHRoZW4gJ0xlZnQgYW5kIFJpZ2h0IHNpZGVzIChCaWxhdGVyYWwpJwogIGVsc2UgJycgICAKCmRlZmluZSBJbWFnaW5nOgogIExhc3QoKFtEaWFnbm9zdGljUmVwb3J0XUQgCiAgICAgIHdoZXJlIEZpcnN0KFAuY29kZS5jb2RpbmcpIGluICAiQ1RTY2Fub2ZMb3dlclNwaW5lIgogICAgICAgIG9yICBGaXJzdChQLmNvZGUuY29kaW5nKSBpbiAiTVJJTE9XQkFDSyIpIERSIAogICAgICAgICAgICB3aGVyZSBEUi5zdGF0dXMudmFsdWUgPSAnZmluYWwnCiAgICAgICAgICAgICAgYW5kICJOb3JtYWxpemVJbnRlcnZhbCIoRFIuZWZmZWN0aXZlKSBzdGFydHMgZHVyaW5nIEludGVydmFsW1RvZGF5KCksIChUb2RheSgpLTI0IG1vbnRocyldKQoKZGVmaW5lIEFkdmFuY2VkRGlhZ25vc3RpY0ltYWdpbmc6CiAgaWYoIkltYWdpbmciIGlzIG5vdCBudWxsKQogICAgdGhlbiB0cnVlIAogIGVsc2UgZmFsc2UKCmRlZmluZSBmdW5jdGlvbiBOb3JtYWxpemVJbnRlcnZhbChvbnNldCBDaG9pY2U8RkhJUi5kYXRlVGltZSwgRkhJUi5BZ2UsIEZISVIuUGVyaW9kLCBGSElSLlJhbmdlLCBGSElSLnN0cmluZz4pOgogIGlmIG9uc2V0IGlzIEZISVIuZGF0ZVRpbWUgdGhlbiAKICAgIEludGVydmFsW0ZISVJIZWxwZXJzLlRvRGF0ZVRpbWUob25zZXQgYXMgRkhJUi5kYXRlVGltZSksIEZISVJIZWxwZXJzLlRvRGF0ZVRpbWUob25zZXQgYXMgRkhJUi5kYXRlVGltZSldIAogIGVsc2UgaWYgb25zZXQgaXMgRkhJUi5QZXJpb2QgdGhlbiAKICAgIEZISVJIZWxwZXJzLlRvSW50ZXJ2YWwob25zZXQgYXMgRkhJUi5QZXJpb2QpIAogIGVsc2UgaWYgb25zZXQgaXMgRkhJUi5BZ2UgdGhlbiAKICAgIEludGVydmFsW0ZISVJIZWxwZXJzLlRvRGF0ZShQYXRpZW50LmJpcnRoRGF0ZSkgKyBGSElSSGVscGVycy5Ub1F1YW50aXR5KG9uc2V0IGFzIEZISVIuQWdlKSwgRkhJUkhlbHBlcnMuVG9EYXRlKFBhdGllbnQuYmlydGhEYXRlKSArIEZISVJIZWxwZXJzLlRvUXVhbnRpdHkob25zZXQgYXMgRkhJUi5BZ2UpICsgMSB5ZWFyXSAKICBlbHNlIAogICAgbnVsbCAKCgo="
               }
           ]    
         }
@@ -329,54 +479,267 @@ def main():
                 "type": "date",
                 "required": True
               },
-                {
-                    "extension": [
-                      {
-                        "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
-                        "valueExpression": {
-                          "language": "text/cql",
-                          "expression": "InjectateType"
-                        }
-                      }
-                    ],
-                    "linkId": "1.2",
-                    "text": "Please indicate the type of injectate(s) that will be used (choose all that apply)",
-                    "type": "choice",
-                    "required": True,
-                    "repeats": True,
-                    "answerOption": [
-                      {
-                        "valueCoding": {
-                          "code": "Biologics",
-                          "display": "Biologics"
-                        }
-                      },
-                      {
-                        "valueCoding": {
-                          "code": "Other Injectate(s)",
-                          "display": "Other Injectate(s)"
-                        }
-                      },
-                      {
-                        "valueCoding": {
-                          "code": "Anaesthetic with or without contrast agent",
-                          "display": "Anaesthetic with or without contrast agent"
-                        }
-                      },
-                      {
-                        "valueCoding": {
-                          "code": "Corticosteroid with or without contrast agent",
-                          "display": "Corticosteroid with or without contrast agent"
-                        }
-                      },
-                      {
-                        "valueCoding": {
-                          "code": "Unknown",
-                          "display": "Unknown"
-                        }
-                      }
-                    ]
-                }
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "InjectateType"
+                    }
+                  }
+                ],
+                "linkId": "1.2",
+                "text": "Please indicate the type of injectate(s) that will be used (choose all that apply)",
+                "type": "choice",
+                "required": True,
+                "repeats": True,
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "code": "Biologics",
+                      "display": "Biologics"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "Other Injectate(s)",
+                      "display": "Other Injectate(s)"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "Anaesthetic with or without contrast agent",
+                      "display": "Anaesthetic with or without contrast agent"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "Corticosteroid with or without contrast agent",
+                      "display": "Corticosteroid with or without contrast agent"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "Unknown",
+                      "display": "Unknown"
+                    }
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "PostHerpeticNeuralgia"
+                    }
+                  }
+                ],
+                "linkId": "1.3",
+                "text": "Is this epidural steroid injection being performed for post-herpetic neuralgia ?",
+                "type": "boolean",
+                "enableWhen": [
+                  {
+                    "question": "1.2",
+                    "operator": "=",
+                    "answerCoding": {
+                      "code": "Corticosteroid with or without contrast agent",
+                      "display": "Corticosteroid with or without contrast agent"
+                    }
+                  }
+                ],
+                "required": True
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "ProcedureLevel"
+                    }
+                  }
+                ],
+                "linkId": "1.4",
+                "text": "What level(s) will this procedure be performed at?",
+                "type": "choice",
+                "required": True,
+                "repeats": True,
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "code": "C1-C2",
+                      "display": "C1-C2"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "C2-C3",
+                      "display": "C2-C3"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "C3-C4",
+                      "display": "C3-C4"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "C4-C5",
+                      "display": "C4-C5"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "C5-C6",
+                      "display": "C5-C6"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "C6-C7",
+                      "display": "C6-C7"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "C7-T1",
+                      "display": "C7-T1"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "T1-T2",
+                      "display": "T1-T2"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "T2-T3",
+                      "display": "T2-T3"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "T3-T4",
+                      "display": "T3-T4"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "T4-T5",
+                      "display": "T4-T5"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "T5-T6",
+                      "display": "T5-T6"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "T6-T7",
+                      "display": "T6-T7"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "T7-T8",
+                      "display": "T7-T8"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "T8-T9",
+                      "display": "T8-T9"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "T9-T10",
+                      "display": "T9-T10"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "T10-T11",
+                      "display": "T10-T11"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "T11-T12",
+                      "display": "T11-T12"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "T12-L1",
+                      "display": "T12-L1"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "Unknown or not sure",
+                      "display": "Unknown or not sure"
+                    }
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "InjectedSide"
+                    }
+                  }
+                ],
+                "linkId": "1.5",
+                "text": "Please indicate the side(s) being injected",
+                "type": "choice",
+                "required": True,
+                "answerOption": [
+                  {
+                    "valueCoding": {
+                      "code": "Left side only (unilateral)",
+                      "display": "Left side only (unilateral)"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "Right side only (unilateral)",
+                      "display": "Right side only (unilateral)"
+                    }
+                  },
+                  {
+                    "valueCoding": {
+                      "code": "Left and Right sides (Bilateral)",
+                      "display": "Left and Right sides (Bilateral)"
+                    }
+                  }
+                ]
+              },
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/cqf-expression",
+                    "valueExpression": {
+                      "language": "text/cql",
+                      "expression": "AdvancedDiagnosticImaging"
+                    }
+                  }
+                ],
+                "linkId": "1.6",
+                "text": "Has advanced diagnostic imaging been performed within last 24 months ?",
+                "type": "boolean",
+                "required": True
+              }
             ]
           }
         ]
@@ -417,7 +780,6 @@ def main():
     }
   ]
 }
-
         create_stub(response_body)
 
 if __name__ == "__main__":
