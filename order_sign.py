@@ -173,6 +173,49 @@ def main():
                         }
                     ],
                     "url": "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/ext-coverage-information"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "coverageInfo",
+                            "valueCoding": {
+                                "code": "covered-prior-auth",
+                                "display": "Covered with prior authorization",
+                                "system": "http://hl7.org/fhir/us/davinci-crd/CodeSystem/temp"
+                            }
+                        },
+                        {
+                            "url": "questionnaire",
+                            "valueCanonical": "https://fhir-dev.mettles.com/baseServer/fhir/Questionnaire/questionnaire-lcd1-eyelidsurgery"
+                        },
+                        {
+                            "url": "coverage",
+                            "valueReference": {
+                                "reference": "{{jsonPath request.body '$.context.draftOrders.entry[0].resource.insurance[0].reference'}}"
+                            }
+                        },
+                        {
+                            "url": "date",
+                            "valueDate": "2025-05-14"
+                        },
+                        {
+                            "url": "identifier",
+                            "valueString": "263adc54-ecf6-41b4-8ac8-055d0068c3fd"
+                        },
+                        {
+                            "url": "pa-needed",
+                            "valueCode": "auth-needed"
+                        },
+                        {
+                            "url": "covered",
+                            "valueCode": "covered"
+                        },
+                        {
+                            "url": "doc-needed",
+                            "valueCode": "clinical"
+                        }
+                    ],
+                    "url": "http://hl7.org/fhir/us/davinci-crd/StructureDefinition/ext-coverage-information"
                 }
             ]
         
