@@ -15,7 +15,7 @@ def create_stub():
                 "Access-Control-Allow-Origin": "*",
                 "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
                 "Access-Control-Allow-Headers": "Content-Type, Authorization",
-                "Content-Location": "http://localhost:8082/Group/export-status"
+                "Content-Location": "https://test.nucural.com/wiremock/Group/export-status"
             }
         }
     }
