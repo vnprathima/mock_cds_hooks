@@ -35,6 +35,16 @@ def create_stub():
                         "type": "ExplanationOfBenefit",
                         "count": 4,
                         "url": "http://localhost:8082/cambia_explanationOfBenefit"
+                    },
+                    {
+                        "type": "Condition",
+                        "count": 4,
+                        "url": "http://localhost:8082/cambia_condition"
+                    },
+                    {
+                        "type": "Observation",
+                        "count": 4,
+                        "url": "http://localhost:8082/cambia_observation"
                     }
                 ],
                 "error": []
