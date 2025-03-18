@@ -102,8 +102,8 @@ def main():
                                         "coding": [
                                             {
                                                 "system": "http://snomed.info/sct",
-                                                "code": "86198006",
-                                                "display": "Influenza vaccination"
+                                                "code": "2731000",
+                                                "display": "Serologic test for Influenza A virus (procedure)"
                                             }
                                         ]
                                     },
