@@ -5,7 +5,7 @@ def create_stub(response_body):
     
     mapping = {
         "request": {
-            "method": "DELETE",
+            "method": "POST",
             "url": "/Claim/$cancel",
           },
         "response": {
@@ -13,7 +13,7 @@ def create_stub(response_body):
             "headers": {
                 "Content-Type": "application/json",
                 "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Methods": "DELETE, OPTIONS",
+                "Access-Control-Allow-Methods": "POST, OPTIONS",
                 "Access-Control-Allow-Headers": "Content-Type, Authorization"
             },
             "jsonBody": response_body,
@@ -29,7 +29,7 @@ def create_stub(response_body):
             "status": 200,
             "headers": {
                 "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Methods": "DELETE, OPTIONS",
+                "Access-Control-Allow-Methods": "POST, OPTIONS",
                 "Access-Control-Allow-Headers": "Content-Type, Authorization"
             }
         }
