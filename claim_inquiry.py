@@ -63,7 +63,7 @@ def main():
                         "extension": [
                             {
                                 "url": "http://hl7.org/fhir/us/davinci-pas/StructureDefinition/extension-reviewAction",
-                                "valueCode": "A4"
+                                "valueCode": "A2"
                             },
                             {
                                 "url": "http://hl7.org/fhir/us/davinci-pas/StructureDefinition/extension-reviewActionReason",
@@ -149,7 +149,7 @@ def main():
                                                             "coding": [
                                                                 {
                                                                     "system": "http://codesystem.x12.org/005010/306",
-                                                                    "code": "A4"
+                                                                    "code": "A2"
                                                                 }
                                                             ]
                                                         }
