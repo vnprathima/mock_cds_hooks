@@ -24,27 +24,27 @@ def create_stub():
                     {
                         "type": "Patient",
                         "count": 2,
-                        "url": "http://localhost:8082/cambia_patient"
+                        "url": "https://test.nucural.com/wiremock/cambia_patient"
                     },
                     {
                         "type": "Coverage",
                         "count": 2,
-                        "url": "http://localhost:8082/cambia_coverage"
+                        "url": "https://test.nucural.com/wiremock/cambia_coverage"
                     },
                     {
                         "type": "ExplanationOfBenefit",
                         "count": 4,
-                        "url": "http://localhost:8082/cambia_explanationOfBenefit"
+                        "url": "https://test.nucural.com/wiremock/cambia_explanationOfBenefit"
                     },
                     {
                         "type": "Condition",
                         "count": 4,
-                        "url": "http://localhost:8082/cambia_condition"
+                        "url": "https://test.nucural.com/wiremock/cambia_condition"
                     },
                     {
                         "type": "Observation",
                         "count": 4,
-                        "url": "http://localhost:8082/cambia_observation"
+                        "url": "https://test.nucural.com/wiremock/cambia_observation"
                     }
                 ],
                 "error": []
