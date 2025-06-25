@@ -54,51 +54,51 @@ def main():
         "systemActions": [
             {
                 "description": "Update to your resource",
-                "resourceId": "{{jsonPath request.body '$.context.appointments[0].id'}}",
+                "resourceId": "{{jsonPath request.body '$.context.appointments.entry[0].resource.id'}}",
                 "type": "update"
             }
         ]
     }
     response_body["systemActions"][0]["resource"] = {
-        "id": "{{jsonPath request.body '$.context.appointments[0].id'}}",
+        "id": "{{jsonPath request.body '$.context.appointments.entry[0].resource.id'}}",
         "appointmentType": {
             "coding": [
                 {
-                    "code": "{{jsonPath request.body '$.context.appointments[0].appointmentType.coding[0].code'}}",
-                    "display": "{{jsonPath request.body '$.context.appointments[0].appointmentType.coding[0].display'}}",
-                    "system": "{{jsonPath request.body '$.context.appointments[0].appointmentType.coding[0].system'}}"
+                    "code": "{{jsonPath request.body '$.context.appointments.entry[0].resource.appointmentType.coding[0].code'}}",
+                    "display": "{{jsonPath request.body '$.context.appointments.entry[0].resource.appointmentType.coding[0].display'}}",
+                    "system": "{{jsonPath request.body '$.context.appointments.entry[0].resource.appointmentType.coding[0].system'}}"
                 }
             ],
-            "text": "{{jsonPath request.body '$.context.appointments[0].appointmentType.text'}}"
+            "text": "{{jsonPath request.body '$.context.appointments.entry[0].resource.appointmentType.text'}}"
         },
         "basedOn": [
             {
-                "reference": "{{jsonPath request.body '$.context.appointments[0].basedOn[0].reference'}}"
+                "reference": "{{jsonPath request.body '$.context.appointments.entry[0].resource.basedOn[0].reference'}}"
             }
         ],
-        "description": "{{jsonPath request.body '$.context.appointments[0].description'}}",
-        "start": "{{jsonPath request.body '$.context.appointments[0].start'}}",
-        "end": "{{jsonPath request.body '$.context.appointments[0].end'}}",
-        # "participant": "{{jsonPath request.body '$.context.appointments[0].participant'}}",
-        # "speciality":"{{jsonPath request.body '$.context.appointments[0].speciality'}}",
+        "description": "{{jsonPath request.body '$.context.appointments.entry[0].resource.description'}}",
+        "start": "{{jsonPath request.body '$.context.appointments.entry[0].resource.start'}}",
+        "end": "{{jsonPath request.body '$.context.appointments.entry[0].resource.end'}}",
+        # "participant": "{{jsonPath request.body '$.context.appointments.entry[0].resource.participant'}}",
+        # "speciality":"{{jsonPath request.body '$.context.appointments.entry[0].resource.speciality'}}",
         "participant": [
             {
                 "actor": {
-                    "reference": "{{jsonPath request.body '$.context.appointments[0].participant[0].actor.reference'}}"
+                    "reference": "{{jsonPath request.body '$.context.appointments.entry[0].resource.participant[0].actor.reference'}}"
                 },
-                "required": "{{jsonPath request.body '$.context.appointments[0].participant[0].required'}}",
-                "status": "{{jsonPath request.body '$.context.appointments[0].participant[0].status'}}"
+                "required": "{{jsonPath request.body '$.context.appointments.entry[0].resource.participant[0].required'}}",
+                "status": "{{jsonPath request.body '$.context.appointments.entry[0].resource.participant[0].status'}}"
             },
             {
                 "actor": {
-                    "reference": "{{jsonPath request.body '$.context.appointments[0].participant[1].actor.reference'}}"
+                    "reference": "{{jsonPath request.body '$.context.appointments.entry[0].resource.participant[1].actor.reference'}}"
                 },
-                "required": "{{jsonPath request.body '$.context.appointments[0].participant[1].required'}}",
-                "status": "{{jsonPath request.body '$.context.appointments[0].participant[1].status'}}"
+                "required": "{{jsonPath request.body '$.context.appointments.entry[0].resource.participant[1].required'}}",
+                "status": "{{jsonPath request.body '$.context.appointments.entry[0].resource.participant[1].status'}}"
             }
         ],
-        "status": "{{jsonPath request.body '$.context.appointments[0].status'}}",
-        "resourceType": "{{jsonPath request.body '$.context.appointments[0].resourceType'}}"
+        "status": "{{jsonPath request.body '$.context.appointments.entry[0].resource.status'}}",
+        "resourceType": "{{jsonPath request.body '$.context.appointments.entry[0].resource.resourceType'}}"
     }
 
     response_body["systemActions"][0]["resource"]["extension"] = [
